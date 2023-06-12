@@ -1,7 +1,5 @@
 #![allow(unused)]
 
-mod lib_test;
-
 use anyhow::{Context, Result};
 use clap::Parser;
 use grrs::find_matches;
@@ -31,4 +29,16 @@ fn main() -> Result<()> {
     find_matches(&read_content, &args.pattern, &mut std::io::stdout());
 
     Ok(())
+}
+
+#[cfg(test)]
+mod tests{
+    use grrs::find_matches;
+
+    #[test]
+    fn find_a_match() {
+        let mut result = Vec::new();
+        find_matches("lorem ipsum\ndolor sit amet", "lorem", &mut result);
+        assert_eq!(result, b"lorem ipsum\n");
+    }
 }
