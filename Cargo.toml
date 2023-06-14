@@ -1,5 +1,5 @@
 [package]
-name = "grrs"
+name = "r4-grrs"
 version = "0.1.0"
 edition = "2021"
 authors = ["R4 Cheng <schaffenneu47@gmail.com>"]
