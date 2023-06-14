@@ -1,13 +1,13 @@
 [package]
 name = "r4_grrs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["R4 Cheng <schaffenneu47@gmail.com>"]
 license = "MIT"
 description = "A tool to search files"
 readme = "README.md"
-homepage = "https://github.com/chenger4/grrs"
-repository = "https://github.com/changer4/grrs"
+homepage = "https://github.com/chengr4/my-first-cli-tool"
+repository = "https://github.com/chengr4/my-first-cli-tool"
 keywords = ["cli", "search", "demo"]
 categories = ["command-line-utilities"]
 
