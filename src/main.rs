@@ -2,7 +2,7 @@
 
 use anyhow::{Context, Result};
 use clap::Parser;
-use grrs::find_matches;
+use r4_grrs::find_matches;
 
 // Instead of text, it pays off to think of CLI arguments as a custom data type.
 /// Search for a pattern in a file and display the lines that contain it.
@@ -33,7 +33,7 @@ fn main() -> Result<()> {
 
 #[cfg(test)]
 mod tests{
-    use grrs::find_matches;
+    use r4_grrs::find_matches;
 
     #[test]
     fn find_a_match() {
